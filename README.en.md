@@ -1,14 +1,14 @@
 <p align="center"><img src="docs/banner.en.png" alt="AdFoundry — open-source AI e-commerce short-video generator: turn one product photo into a TikTok Shop / Reels / Shorts / Douyin ad that sells" width="820"/></p>
 
-# AdFoundry (万镜工场) — Open-source AI shopping-video maker ｜ One product photo, an auto-generated video that sells
+# AdFoundry — Open-source AI shopping-video maker ｜ One product photo, an auto-generated video that sells
 
 > **Turn one product photo into a short video that actually converts.** Upload a product image → AI extracts selling points · writes the script · **locks your product so it never gets distorted** · adds voiceover + subtitles + BGM → in tens of seconds you get a video ready to post to **TikTok Shop / Reels / Shorts / Douyin / Kuaishou / Xiaohongshu**. **One person, dozens of videos a day · 0-cost batch production · open-source, no watermark.**
 >
-> <sub>📌 This repo is a community fork of the open-source project [**ClipForge**](https://github.com/xixihhhh/clipforge) (formerly 带货剪手, [original website](https://xixihhhh.github.io/clipforge/en.html)); all features and history carried over; also does "one-sentence topic → video" for any non-commerce subject.</sub>
+> <sub>📌 This repo is a community fork of the open-source project [**ClipForge**](https://github.com/xixihhhh/clipforge) (formerly known as "daihuo-jianshou", [original website](https://xixihhhh.github.io/clipforge/en.html)); all features and history carried over; also does "one-sentence topic → video" for any non-commerce subject.</sub>
 
-<p align="center"><strong>🧑‍🎓 First time here? Start with the 👉 <a href="TUTORIAL.en.md">beginner tutorial (every step spelled out)</a></strong> · <a href="TUTORIAL.md">中文教程</a><br/><sub>Install · add one key · your first free video in 3 minutes · troubleshooting table · where your data lives</sub></p>
+<p align="center"><strong>🧑‍🎓 First time here? Start with the 👉 <a href="TUTORIAL.en.md">beginner tutorial (every step spelled out)</a></strong> · <a href="TUTORIAL.md">Chinese tutorial</a><br/><sub>Install · add one key · your first free video in 3 minutes · troubleshooting table · where your data lives</sub></p>
 
-<p align="right"><strong>English</strong> · <a href="README.md">中文</a></p>
+<p align="right"><strong>English</strong> · <a href="README.md">Chinese</a></p>
 
 <p align="center">
   <img src="https://github.com/rainwong2008/adfoundry/actions/workflows/ci.yml/badge.svg" alt="CI" />
@@ -222,7 +222,7 @@ Using the sample "Soft Thick Facial Tissue":
 ## ❓ FAQ
 
 **What is AdFoundry?**
-AdFoundry (万镜工场) is an **open-source, free AI shopping-video tool**, forked from the open-source project [ClipForge](https://github.com/xixihhhh/clipforge) (formerly 带货剪手 / daihuo-jianshou): upload one product photo and AI extracts selling points, writes a sales script, **keeps your product undistorted**, fills visuals + voiceover + subtitles, and outputs a TikTok Shop / Reels / Shorts / Douyin / Kuaishou / Xiaohongshu video in one click; it also does "one-sentence topic → video" for any non-commerce subject.
+AdFoundry is an **open-source, free AI shopping-video tool**, forked from the open-source project [ClipForge](https://github.com/xixihhhh/clipforge) (formerly "daihuo-jianshou"): upload one product photo and AI extracts selling points, writes a sales script, **keeps your product undistorted**, fills visuals + voiceover + subtitles, and outputs a TikTok Shop / Reels / Shorts / Douyin / Kuaishou / Xiaohongshu video in one click; it also does "one-sentence topic → video" for any non-commerce subject.
 
 **Is it really free? Do I need an API key?**
 The free path is **0-key**: assets from free commercial-use CC libraries (Openverse images + Wikimedia real footage), voiceover from free Microsoft Edge TTS, compositing from local FFmpeg. You only need a key for the platform you choose when you want paid AI image/video models.
@@ -237,13 +237,13 @@ No watermark. Self-hosted + open-source (AGPL-3.0); output is clean and commerci
 AdFoundry is **open-source, runs locally, no watermark, zero-cost on the free path, and your data never leaves your machine**; commercial SaaS usually charges per video, watermarks output, and requires uploading assets to the cloud.
 
 **I've never used anything like this — is there a hand-holding guide?**
-Yes: [**TUTORIAL.en.md**](TUTORIAL.en.md) ([中文](TUTORIAL.md)) — three install options, three ways to add a key, your first free video in 3 minutes, what the AI path costs before you spend, Director mode page by page, a troubleshooting table, and where your data lives.
+Yes: [**TUTORIAL.en.md**](TUTORIAL.en.md) ([Chinese](TUTORIAL.md)) — three install options, three ways to add a key, your first free video in 3 minutes, what the AI path costs before you spend, Director mode page by page, a troubleshooting table, and where your data lives.
 
 **Can I use it if I can't write scripts or edit?**
 Yes. The whole flow is automatic — AI writes the script, fills visuals, adds voiceover, burns subtitles, adds transitions. **No on-camera presence, no shooting, no editing.**
 
 **Which platforms and languages are supported?**
-One-click fit for TikTok / Reels / Shorts (9:16) / Douyin / Kuaishou / Xiaohongshu (3:4); the UI and docs support **中文 / English**, auto-switching by system language.
+One-click fit for TikTok / Reels / Shorts (9:16) / Douyin / Kuaishou / Xiaohongshu (3:4); the UI and docs support **Chinese / English**, auto-switching by system language.
 
 **Can an AI assistant (Claude / Cursor) generate videos directly?**
 Yes. AdFoundry ships an **MCP Server** (`clipforge_product_script` turns a product link straight into a sales script — see [mcp/README.md](mcp/README.md)) plus an **agent Skill** ([skills/clipforge-video](skills/clipforge-video/SKILL.md)) that teaches an assistant the whole pipeline. Install any way you like: `npx skills add rainwong2008/adfoundry`; or `/plugin marketplace add rainwong2008/adfoundry` in Claude Code for skill + MCP in one; or paste the Setup prompt from [skills/README](skills/README.md) to your agent and it installs itself.
@@ -595,10 +595,10 @@ pnpm dist       # .dmg installer
 
 [AGPL-3.0](LICENSE) © 2026 xixihhhh (author of the original ClipForge project)
 
-This repository is a community fork (AdFoundry / 万镜工场) and remains AGPL-3.0; modification / redistribution (incl. SaaS) must stay open-source and keep attribution.
+This repository is a community fork (AdFoundry) and remains AGPL-3.0; modification / redistribution (incl. SaaS) must stay open-source and keep attribution.
 
 ---
 
-<sub><b>Keywords</b>: AI short-video generator · AI shopping video · one-sentence to video · text to video · faceless video generator · AI short video maker · TikTok / Reels / Shorts / Douyin / Kuaishou / Xiaohongshu maker · AI UGC e-commerce ads · AI voiceover · free-stock auto editing · open-source / self-hosted video tool · AI script generation · MCP server · AdFoundry / 万镜工场 (a fork of ClipForge).</sub>
+<sub><b>Keywords</b>: AI short-video generator · AI shopping video · one-sentence to video · text to video · faceless video generator · AI short video maker · TikTok / Reels / Shorts / Douyin / Kuaishou / Xiaohongshu maker · AI UGC e-commerce ads · AI voiceover · free-stock auto editing · open-source / self-hosted video tool · AI script generation · MCP server · AdFoundry (a fork of ClipForge).</sub>
 
-<sub>AdFoundry (万镜工场) is a community fork of the open-source project ClipForge, unaffiliated with the original author, and not officially affiliated with TikTok, Douyin, Kuaishou, Xiaohongshu, YouTube, Shopify, Amazon, Microsoft, OpenAI or any model provider; follow each third-party model's and asset's terms when using them.</sub>
+<sub>AdFoundry is a community fork of the open-source project ClipForge, unaffiliated with the original author, and not officially affiliated with TikTok, Douyin, Kuaishou, Xiaohongshu, YouTube, Shopify, Amazon, Microsoft, OpenAI or any model provider; follow each third-party model's and asset's terms when using them.</sub>
