@@ -1,10 +1,8 @@
-<p align="center"><img src="docs/banner.png" alt="万镜工场 AdFoundry — 开源 AI 带货短视频神器，一张商品图自动产出抖音小店/快手/小红书/TikTok Shop 卖货短视频" width="820"/></p>
-
 # 万镜工场 AdFoundry — 开源 AI 带货短视频神器 ｜ 一张商品图，自动出卖货视频
 
 > **把一张商品图，变成会出单的卖货短视频。** 上传商品图 → AI 提炼卖点 · 写种草脚本 · **锁定商品原图不变形** · 配音 + 字幕 + BGM → 几十秒产出能直接发**抖音小店 / 快手 / 小红书 / 视频号 / TikTok Shop** 的带货视频。**一个人一天出几十条 · 0 成本批量 · 开源无水印。**
 >
-> <sub>📌 本项目 fork 自原开源项目 [**ClipForge**](https://github.com/xixihhhh/clipforge)（原『带货剪手』，[原项目官网](https://xixihhhh.github.io/clipforge/)），功能与历史全部延续；也支持「一句话主题成片」做任意非带货题材。</sub>
+> <sub>📌 本项目 fork 自原开源项目 [**ClipForge**](https://github.com/xixihhhh/clipforge)，功能与历史全部延续；也支持「一句话主题成片」做任意非带货题材。</sub>
 
 <p align="center"><strong>🧑‍🎓 第一次用？看这篇 👉 <a href="TUTORIAL.md">小白使用教程（每一步都写清楚）</a></strong> · <a href="TUTORIAL.en.md">English tutorial</a><br/><sub>安装 · 配 Key · 3 分钟出第一条免费片 · 报错对照表 · 数据存哪，全在里面</sub></p>
 
@@ -82,48 +80,7 @@
 
 </details>
 
-## 🧩 原作者项目
-
-> 以下为原项目作者的其他作品，与本 fork 无维护关系。
-
-- 🎭 [**Dramake**](https://github.com/xixihhhh/ai-short-drama-skill)：导演级 AI 短剧 Agent Skill，把点子、小说或剧本串成可追踪的剧本、角色母版、分镜、模型与预算路线、配音、剪辑和质检流程，适配 Codex、Claude Code 与 WorkBuddy。安装：`npx skills add xixihhhh/ai-short-drama-skill --skill dramake`
-
 想更高画质再加 Key：一个接口聚合 **7 大平台 30+ 精选模型**（GPT Image 2 / **Seedance 2.5** / **MiniMax H3** / Kling O3 / Veo 3.1…），Atlas 全站 **200+ 视频模型动态直连**——平台新上的模型无需升级就能用；自部署开源（AGPL-3.0），数据全在本机不上云。
-
-## 🎬 示例：一张商品图进去，一条能发的片出来（Seedance 2.5 实测）
-
-**输入只有下面这一张商品图 + 一句话需求。** 台词、分镜、画面、人声全部是万镜工场自动产出：判官团先把「大家好体」初稿台词撕掉重写 → 九宫格一次生图锁住人物/场景/商品 → 一键整片：
-
-<table>
-  <tr>
-    <th align="center">① 输入：一张商品图</th>
-    <th align="center">② 自动九宫格分镜（1 次生图）</th>
-    <th align="center">③ 输出：一键整片（4 镜 · 人物原声）</th>
-  </tr>
-  <tr>
-    <td align="center"><img src="docs/videos/input-coffee.jpg" width="210" alt="输入：冷萃咖啡液商品图"/></td>
-    <td align="center"><img src="docs/videos/grid-coffee.jpg" width="210" alt="自动产出的九宫格分镜：同一人物/房间/光线的 9 个镜头"/></td>
-    <td align="center"><a href="https://xixihhhh.github.io/clipforge/videos/demo-coffee-film.mp4"><img src="docs/videos/poster-coffee-film.jpg" width="210" alt="点击播放：4 镜整片"/></a><br/><sub>▶️ 点图播放（开声音）</sub></td>
-  </tr>
-</table>
-
-台词也不是套模板——判官团把初稿的「大家好，今天给大家推荐一款超好用的冷萃咖啡液」撕成了成片里的**「就这玩意儿，把我星巴克的钱包给救了」**；整片 4 个镜头（口播钩子→挤咖啡→举杯喝→举盒收尾）一次生成原生切换，台词由人物原声逐字说出。
-
-同一套流程的另外两条产出（输入 → 输出）：
-
-<table>
-  <tr>
-    <td align="center"><img src="docs/videos/input-coffee.jpg" width="110" alt="同一张咖啡液商品图"/></td>
-    <td align="center">→</td>
-    <td align="center"><a href="https://xixihhhh.github.io/clipforge/videos/demo-coffee.mp4"><img src="docs/videos/poster-coffee.jpg" width="110" alt="点击播放：中文口播单镜"/></a><br/><sub>🎙️ 中文口播单镜 12s</sub></td>
-    <td align="center" width="40"></td>
-    <td align="center"><img src="docs/videos/input-blender.jpg" width="110" alt="输入：便携榨汁杯商品图"/></td>
-    <td align="center">→</td>
-    <td align="center"><a href="https://xixihhhh.github.io/clipforge/videos/demo-blender-en.mp4"><img src="docs/videos/poster-blender-en.jpg" width="110" alt="点击播放：出海英文口播"/></a><br/><sub>🌍 出海英文口播 12s</sub></td>
-  </tr>
-</table>
-
-人声、台词、口型均为模型原生输出，未经人工修片；演示视频托管于<a href="https://xixihhhh.github.io/clipforge/">原项目官网</a>，可直接自动播放。
 
 ## 🚀 30 秒跑起来
 
@@ -134,18 +91,6 @@ docker run -d -p 3000:3000 -v adfoundry-data:/data ghcr.io/rainwong2008/adfoundr
 打开 `http://localhost:3000`，**免 Key 就能出第一条片**（免费素材 + 免费配音）。镜像由 CI 随每次 Release 自动构建发布；若尚未发布，可先用[源码运行](#本地开发)。本地开发 / 桌面版 / 配模型见 [快速开始](#快速开始)。
 
 > 🧑‍🎓 **不懂技术？** 别从这里开始——看 [**小白使用教程**](TUTORIAL.md)，从下载桌面版到出第一条片，每一步点哪里都写了。
-
-## 界面预览
-
-| 工作台·免费/AI 双档明选 | 脚本闸门·一次点击才花钱 | 高级新建（导演模式） |
-|:---:|:---:|:---:|
-| ![工作台](docs/screenshots/01-home.png) | ![脚本好了](docs/screenshots/04-script.png) | ![高级新建](docs/screenshots/03-new.png) |
-| **视频合成·配音/字幕/BGM** | **成片导出·多平台** | **批量出片** |
-| ![合成](docs/screenshots/04b-video.png) | ![导出](docs/screenshots/05-export.png) | ![批量](docs/screenshots/06-batch.png) |
-
-> 左上就是完整创建流程：传图/贴链接/说主题 → 选出片方式（🆓 免费快剪 ¥0 / ✨ AI 生成成片·按秒标价）→ 选带货形式 → 开始生成。逐步图解见[**小白使用教程**](TUTORIAL.md)，网页速览见[原项目官网使用手册](https://xixihhhh.github.io/clipforge/guide.html)。
-
-<p align="center"><img src="docs/showcase-platforms.png" alt="万镜工场一键产出抖音 / 快手 / 小红书 / TikTok 竖屏带货短视频，全程不出真人脸" width="820"/></p>
 
 ---
 
@@ -177,11 +122,9 @@ docker run -d -p 3000:3000 -v adfoundry-data:/data ghcr.io/rainwong2008/adfoundr
 - **📈 效果回流（数据飞轮·学出爆款）**：发布后在导出页回填这条的播放/点赞/成交，跨项目按品类聚合出**哪种脚本风格、哪个开场钩子更能卖**，**直接回灌到下一次脚本生成**——「智能推荐」风格按你的实测转化优先、Prompt 带上历史转化提示，把「凭感觉」变成「用数据」。冷启动无数据时自动回落，不打扰。
 - **📝 字幕可导出**：成片内烧字幕之外，可一键导出 **SRT / WebVTT**（`/api/project/[id]/subtitle?format=srt|vtt`），用于二次剪辑、平台原生字幕、无障碍与再校对。
 
-<p align="center"><img src="docs/hero.png" alt="万镜工场带货工作流：商品图 → AI 提炼卖点写脚本 → 商品保真配画面 → 免费配音字幕 → 抖音/快手/小红书/TikTok 卖货短视频" width="820"/></p>
-
 ## 💡 带货实战：一张商品图 → 30 秒一条
 
-以示例「云柔加厚抽纸」为例（成片见上方 [界面预览](#界面预览)）：
+以示例「云柔加厚抽纸」为例：
 
 1. **传图填名** — 上传商品图、填「云柔加厚抽纸」、选投放平台（抖音 / 快手 / 小红书）。
 2. **AI 写脚本（~30s）** — 产出 3 套带货脚本（痛点种草 / 场景安利 / 对比测评），自带黄金 3 秒钩子、话题标签、封面文案、互动引导语。
@@ -227,7 +170,7 @@ docker run -d -p 3000:3000 -v adfoundry-data:/data ghcr.io/rainwong2008/adfoundr
 ## ❓ 常见问题 FAQ
 
 **万镜工场是什么？**
-万镜工场（英文名 AdFoundry）是一款**开源免费的 AI 带货短视频工具**，fork 自开源项目 [ClipForge](https://github.com/xixihhhh/clipforge)（原『带货剪手 / daihuo-jianshou』）：上传一张商品图，AI 自动提炼卖点、写带货脚本、**保持商品原图不变形**、配画面 + 配音 + 字幕，一键产出抖音小店 / 快手 / 小红书 / 视频号 / TikTok Shop 卖货短视频；也支持「一句话主题成片」做任意非带货题材。
+万镜工场（英文名 AdFoundry）是一款**开源免费的 AI 带货短视频工具**，fork 自开源项目 [ClipForge](https://github.com/xixihhhh/clipforge)：上传一张商品图，AI 自动提炼卖点、写带货脚本、**保持商品原图不变形**、配画面 + 配音 + 字幕，一键产出抖音小店 / 快手 / 小红书 / 视频号 / TikTok Shop 卖货短视频；也支持「一句话主题成片」做任意非带货题材。
 
 **真的完全免费吗？需要 API Key 吗？**
 免费路径 **0 Key**：素材用免费可商用 CC 库（Openverse 图片 + Wikimedia 实拍视频），配音用免费微软 Edge TTS，合成用本地 FFmpeg。只有想用付费 AI 生图 / 生视频模型时，才需要对应平台的 Key。
@@ -306,7 +249,7 @@ crontab -e   # 加入下面一行（把路径和环境变量换成你的）
 
 | 平台 | 图片模型 | 视频模型 | 特色 |
 |------|---------|---------|------|
-| **[Atlas Cloud](https://www.atlascloud.ai?ref=JPM683)** ⭐推荐 | **GPT Image 2**, Seedream 5.0, Nano Banana 2 | **Seedance 2.5**(4-30s·原生人声), Seedance 2.0, **MiniMax H3**(海螺3.0·2K·原生立体声), Kling O3, Veo 3.1, 万相 2.7, Hailuo 2.3, Vidu Q3 + 全站 200+ 动态直连 | 一个 Key 聚合 LLM+生图+生视频，模型最全价格最优 |
+| **[Atlas Cloud](https://www.atlascloud.ai)** ⭐推荐 | **GPT Image 2**, Seedream 5.0, Nano Banana 2 | **Seedance 2.5**(4-30s·原生人声), Seedance 2.0, **MiniMax H3**(海螺3.0·2K·原生立体声), Kling O3, Veo 3.1, 万相 2.7, Hailuo 2.3, Vidu Q3 + 全站 200+ 动态直连 | 一个 Key 聚合 LLM+生图+生视频，模型最全价格最优 |
 | **fal.ai** | **GPT Image 2**(+edit), FLUX.1/2 Pro, Recraft V4, Seedream V5 Edit | Kling 3.0 Pro, Veo 3, Hailuo 2.3, Luma Ray 2, Vidu Q2 | 模型全，含 OpenAI 生图与商品保真编辑 |
 | **Replicate** | FLUX 1.1 Pro/Kontext, Imagen 4, Seedream 4 | Kling v2.1, Seedance 1 Pro, Hailuo 02, Veo 3 Fast | 模型库最全，predictions API 统一调用 |
 | **火山引擎（方舟 Ark）** | Seedream 5.0/4.0 | Seedance 2.0/1.0 Pro(原生音频) | 字节系明星模型，电影级画质，速度快 |
@@ -444,7 +387,7 @@ open http://localhost:3000
 
 ### 首次配置
 
-1. 点击右上角 **设置**，配置至少一个 AI 平台的 API Key（推荐 **[Atlas Cloud](https://www.atlascloud.ai?ref=JPM683)**，一个 Key 同时支持 LLM + 生图 + 生视频）
+1. 点击右上角 **设置**，配置至少一个 AI 平台的 API Key（推荐 **[Atlas Cloud](https://www.atlascloud.ai)**，一个 Key 同时支持 LLM + 生图 + 生视频）
 2. 配置 LLM（脚本生成需要，支持任何 OpenAI 兼容接口）
 3. 在"默认设置"里选择默认生图 / 生视频模型（如 GPT Image 2、Seedance 2.5）
 4. （可选）在"出镜人物"Tab 添加角色，在"品牌设置"Tab 配置品牌视觉
@@ -610,7 +553,7 @@ pnpm dist       # 出 .dmg 安装包
 
 ## Roadmap
 
-> 逐版本更新记录见 [GitHub Releases](https://github.com/rainwong2008/adfoundry/releases)（早期版本历史见[原项目 Releases](https://github.com/xixihhhh/clipforge/releases)）；各能力的使用细节见上方[核心功能](#核心功能)。
+> 逐版本更新记录见 [GitHub Releases](https://github.com/rainwong2008/adfoundry/releases)；各能力的使用细节见上方[核心功能](#核心功能)。
 
 **已完成**
 - ✅ **出片主链路**：AI 脚本（5 品类 × 十风格四形态 + 黄金 3 秒 + 平台 SEO）→ 商品保真素材（7 平台 30+ 模型）→ i2v 动态镜头（运镜引擎 / 命名运镜预设每镜可选 / 画面风格 Look / 链式首尾帧 / 强度三档 / 逐镜重跑）→ FFmpeg 合成（爆款字幕 / 免费多音色配音 / BGM / 智能转场 / 风格配方 / 质量预设）→ 多平台导出（构图预览与码率预算）
@@ -629,12 +572,6 @@ pnpm dist       # 出 .dmg 安装包
 - ✅ **可编辑音轨导出**：CLI / MCP 传入 `--audio-stems` / `audioStems: true` 后，sidecar 会附带旁白和 BGM WAV 下载地址；默认关闭，不增加普通合成耗时。
 - [ ] 多轨时间线（对白 / BGM / 音效 / 字幕分轨）
 - [ ] 数字人口型（fal.ai Lipsync）与更细粒度的区域修复
-
----
-
-## 原作者项目
-
-✂️ **[HotClip 爆款切片](https://github.com/xixihhhh/hotclip)** — 开源 AI 长视频切片工具:播客/直播回放丢进去,AI 找爆点,一键切出竖屏+逐字字幕成片,素材全程不出你的电脑。**万镜工场从一张图造短视频,HotClip 把长视频切成爆款**——上面规划里的「长视频切爆款」,现在就能用它。
 
 ---
 
