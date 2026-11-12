@@ -215,7 +215,7 @@ if (hasInstanceLock) app.whenReady().then(async () => {
     // window simply never appears and the user reports "clicked, nothing happened" with no way to diagnose.
     if (!process.env.HEADLESS_SMOKE) {
       dialog.showErrorBox(
-        "ClipForge 启动失败 / Failed to start",
+        "万镜工场 启动失败 / Failed to start",
         `本地服务未能启动 / The local service failed to start.\n\n${(e && e.message) || e}\n\n` +
           `日志 / Log: ${logFilePath || "(不可用)"}\n\n--- 日志末尾 / log tail ---\n${readLogTail()}`
       );
@@ -251,7 +251,7 @@ function createWindow(url) {
   mainWindow = new BrowserWindow({
     width: 1280,
     height: 860,
-    title: "ClipForge",
+    title: "万镜工场",
     backgroundColor: "#0a0a0a",
     webPreferences: { contextIsolation: true, preload: path.join(__dirname, "preload.cjs") },
   });
@@ -260,7 +260,7 @@ function createWindow(url) {
     if (errorCode === -3) return; // ERR_ABORTED: benign (e.g. redirect/navigation), ignore
     log(`页面加载失败 code=${errorCode} desc=${errorDescription} url=${validatedURL}`);
     dialog.showErrorBox(
-      "ClipForge 页面加载失败 / Page load failed",
+      "万镜工场 页面加载失败 / Page load failed",
       `${errorDescription} (${errorCode})\n${validatedURL}\n\n日志 / Log: ${logFilePath || "(不可用)"}`
     );
   });
