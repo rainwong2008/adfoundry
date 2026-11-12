@@ -1,19 +1,17 @@
-<p align="center"><img src="docs/banner.png" alt="ClipForge — 开源 AI 带货短视频神器，一张商品图自动产出抖音小店/快手/小红书/TikTok Shop 卖货短视频" width="820"/></p>
+<p align="center"><img src="docs/banner.png" alt="万镜工场 AdFoundry — 开源 AI 带货短视频神器，一张商品图自动产出抖音小店/快手/小红书/TikTok Shop 卖货短视频" width="820"/></p>
 
-# ClipForge — 开源 AI 带货短视频神器 ｜ 一张商品图，自动出卖货视频
+# 万镜工场 AdFoundry — 开源 AI 带货短视频神器 ｜ 一张商品图，自动出卖货视频
 
 > **把一张商品图，变成会出单的卖货短视频。** 上传商品图 → AI 提炼卖点 · 写种草脚本 · **锁定商品原图不变形** · 配音 + 字幕 + BGM → 几十秒产出能直接发**抖音小店 / 快手 / 小红书 / 视频号 / TikTok Shop** 的带货视频。**一个人一天出几十条 · 0 成本批量 · 开源无水印。**
 >
-> <sub>📌 原『**带货剪手** / daihuo-jianshou』，仓库 · Star · 历史全部延续；也支持「一句话主题成片」做任意非带货题材。</sub>
-
-<p align="center"><strong>🌐 官网:<a href="https://xixihhhh.github.io/clipforge/">xixihhhh.github.io/clipforge</a></strong> — 30 秒看懂 ClipForge 能帮你卖什么</p>
+> <sub>📌 本项目 fork 自原开源项目 [**ClipForge**](https://github.com/xixihhhh/clipforge)（原『带货剪手』，[原项目官网](https://xixihhhh.github.io/clipforge/)），功能与历史全部延续；也支持「一句话主题成片」做任意非带货题材。</sub>
 
 <p align="center"><strong>🧑‍🎓 第一次用？看这篇 👉 <a href="TUTORIAL.md">小白使用教程（每一步都写清楚）</a></strong> · <a href="TUTORIAL.en.md">English tutorial</a><br/><sub>安装 · 配 Key · 3 分钟出第一条免费片 · 报错对照表 · 数据存哪，全在里面</sub></p>
 
 <p align="right"><a href="README.en.md">English</a> · <strong>中文</strong></p>
 
 <p align="center">
-  <img src="https://github.com/xixihhhh/clipforge/actions/workflows/ci.yml/badge.svg" alt="CI" />
+  <img src="https://github.com/rainwong2008/adfoundry/actions/workflows/ci.yml/badge.svg" alt="CI" />
   <img src="https://img.shields.io/badge/License-AGPL%20v3-blue?style=flat-square" alt="License: AGPL v3" />
   <img src="https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js" alt="Next.js 16" />
   <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react" alt="React 19" />
@@ -21,10 +19,9 @@
   <img src="https://img.shields.io/badge/Tailwind-4-06B6D4?style=flat-square&logo=tailwindcss" alt="Tailwind CSS 4" />
   <img src="https://img.shields.io/badge/FFmpeg-视频合成-007808?style=flat-square&logo=ffmpeg" alt="FFmpeg" />
   <img src="https://img.shields.io/badge/AI-多模型聚合-FF6F00?style=flat-square" alt="AI Multi-Model" />
-  <a href="https://skills.sh/xixihhhh/clipforge"><img src="https://skills.sh/b/xixihhhh/clipforge" alt="Agent Skill 安装量" /></a>
 </p>
 
-## ✨ 为什么选 ClipForge
+## ✨ 为什么选万镜工场
 
 | 独家能力 | 一句话 |
 |---|---|
@@ -58,7 +55,7 @@
 - 🧪 **本地转写质量检查**：Tiny / Base / Small 使用词时间戳兼容权重，提供本地 CER、耗时和内存评测；Small 可选，默认轻量模型。见[评测说明](docs/asr-quality.md)。
 - ✂️ **片段工作台**：按原话关键词与目标时长，从已转写素材整理短片段；查看真实原话与时间范围，试听后只保留选中区间，也可手动调整。支持撤销、字幕重排与专业时间线导出，网页 / CLI / MCP 共用本地能力，无需新模型。见[使用说明](docs/transcript-clips.md)。
 - ✂️ **长素材文字剪辑（v0.8.97）**：本地转写改为固定内存分块，最长 2 小时可取消续跑；删文字即删画面，支持即时跳播、diff、版本回退，并可导出 OTIO / EDL / CSV 继续专业精修。原片和旧稿永不覆盖。
-- 🚦 **免费 / AI 双档出片**：创建时只问两件事——出片方式（🆓 免费快剪 ¥0 约 2 分钟 / ✨ AI 生成成片·按秒计费直接标在选项上）和带货形式（智能推荐 / 真人口播·可选主播 / 情景短剧 / 图文混剪）。免费档全自动直达成片；AI 档把免费脚本当「文字方案」确认闸门——看完口播文案点一次「AI 生成成片」，自动跑 九宫格锁人锁品 → 一键整片（原生切镜+口播原声），花钱永远只有这一次点击。开源 BYOK：费用按量付给你所选的模型平台，ClipForge 本身免费。
+- 🚦 **免费 / AI 双档出片**：创建时只问两件事——出片方式（🆓 免费快剪 ¥0 约 2 分钟 / ✨ AI 生成成片·按秒计费直接标在选项上）和带货形式（智能推荐 / 真人口播·可选主播 / 情景短剧 / 图文混剪）。免费档全自动直达成片；AI 档把免费脚本当「文字方案」确认闸门——看完口播文案点一次「AI 生成成片」，自动跑 九宫格锁人锁品 → 一键整片（原生切镜+口播原声），花钱永远只有这一次点击。开源 BYOK：费用按量付给你所选的模型平台，万镜工场本身免费。
 - ⚖️ **小白模式质量不缩水**：全托管砍的是操作，不是质量功能。五条一键链（网页免费快剪 / AI 生成成片 / 批量出片 / CLI create / MCP create_video）在配画面、花钱生成之前都自动跑判官团——四位判官挑刺 + 等长重写自动应用，弱句重写完才开拍（报告在编辑器仍可查，LLM 没配则静默跳过、绝不挡链路）；AI 档选了主播但还没定妆时，自动先生成四视图定妆照锁脸再出片，定妆照回存主播库跨条视频复用；一键整片的时间码 prompt 逐镜带上脚本运镜。LLM 默认档同步升级 DeepSeek V4 Pro（实测旧默认 v3.2 的思考文本会弄脏 JSON 输出），设置页模型选择器仍可自选任意模型。
 - 🎭 **真实感全家桶（专治「一眼 AI」）**：①Look 预设新增「实拍感」组——手机直出 / 前置自拍（26mm 广角畸变+手臂入画）/ 搁置机位，相机身份词前置注入视频 prompt（句首 token 权重最高）；②人声落地默认开——TTS 旁白过手机麦频段 + AGC 式压缩 + 轻谐波激励，全片垫房间底噪，句间不再是数字死寂（实测句间底噪 -91dB→-58dB，原生模型人声绝不过链）；③原生感后期加三件：边走边拍档（微旋转呼吸滚动）、镜头光晕（高光泛红边）、平台二压感（720p 世代损失+CRF27，像「已被平台压过一遍的真人上传」）；④一键整片 prompt 吃 Seedance 2.5 官方语法——`{}` 台词括号、素材绑定段+关键帧顺序声明、`不要字幕`/`无bgm` 官方负控通道、台词密度检查防口型漂移，质感行全正向措辞。
 - 🪝 **吸引力升级（带货视频怎么让人看完）**：钩子库从 10 款扩到 16 款，新增信任型/社证型六款——自曝反转、认缺点开场、淘汰式测评、成本拆账、评论回应、跟风真香（海外投放数据背书：「全程夸”恰是观众识别广告的第一信号）；脚本 prompt 注入留人转化硬规则——商品实体前 3 秒入画（大盘 63% 高点击视频如此）、超 20 秒必有 40%–60% 处续命钩、CTA 双落位（约 70% 顺口首提 + 末镜复读带手势）、紧迫感分档（默认个人体感软紧迫，虚假硬促违广告法），结构判官同步盯中段续命钩；发布文案包新增「评论区运营包」——置顶自问自答 + 高频异议回复模板（评论区是视频的第二落地页；刻意不做预埋假评论，附合规提示）。真实 LLM 实测：新规则被采纳，成片脚本 70% 处自然首提链接、CTA 用上软紧迫话术。
@@ -85,7 +82,9 @@
 
 </details>
 
-## 🧩 同作者项目
+## 🧩 原作者项目
+
+> 以下为原项目作者的其他作品，与本 fork 无维护关系。
 
 - 🎭 [**Dramake**](https://github.com/xixihhhh/ai-short-drama-skill)：导演级 AI 短剧 Agent Skill，把点子、小说或剧本串成可追踪的剧本、角色母版、分镜、模型与预算路线、配音、剪辑和质检流程，适配 Codex、Claude Code 与 WorkBuddy。安装：`npx skills add xixihhhh/ai-short-drama-skill --skill dramake`
 
@@ -93,7 +92,7 @@
 
 ## 🎬 示例：一张商品图进去，一条能发的片出来（Seedance 2.5 实测）
 
-**输入只有下面这一张商品图 + 一句话需求。** 台词、分镜、画面、人声全部是 ClipForge 自动产出：判官团先把「大家好体」初稿台词撕掉重写 → 九宫格一次生图锁住人物/场景/商品 → 一键整片：
+**输入只有下面这一张商品图 + 一句话需求。** 台词、分镜、画面、人声全部是万镜工场自动产出：判官团先把「大家好体」初稿台词撕掉重写 → 九宫格一次生图锁住人物/场景/商品 → 一键整片：
 
 <table>
   <tr>
@@ -124,15 +123,15 @@
   </tr>
 </table>
 
-人声、台词、口型均为模型原生输出，未经人工修片；<a href="https://xixihhhh.github.io/clipforge/">官网</a>可直接自动播放。
+人声、台词、口型均为模型原生输出，未经人工修片；演示视频托管于<a href="https://xixihhhh.github.io/clipforge/">原项目官网</a>，可直接自动播放。
 
 ## 🚀 30 秒跑起来
 
 ```bash
-docker run -d -p 3000:3000 -v clipforge-data:/data ghcr.io/xixihhhh/clipforge
+docker run -d -p 3000:3000 -v adfoundry-data:/data ghcr.io/rainwong2008/adfoundry
 ```
 
-打开 `http://localhost:3000`，**免 Key 就能出第一条片**（免费素材 + 免费配音）。本地开发 / 桌面版 / 配模型见 [快速开始](#快速开始)。
+打开 `http://localhost:3000`，**免 Key 就能出第一条片**（免费素材 + 免费配音）。镜像由 CI 随每次 Release 自动构建发布；若尚未发布，可先用[源码运行](#本地开发)。本地开发 / 桌面版 / 配模型见 [快速开始](#快速开始)。
 
 > 🧑‍🎓 **不懂技术？** 别从这里开始——看 [**小白使用教程**](TUTORIAL.md)，从下载桌面版到出第一条片，每一步点哪里都写了。
 
@@ -144,9 +143,9 @@ docker run -d -p 3000:3000 -v clipforge-data:/data ghcr.io/xixihhhh/clipforge
 | **视频合成·配音/字幕/BGM** | **成片导出·多平台** | **批量出片** |
 | ![合成](docs/screenshots/04b-video.png) | ![导出](docs/screenshots/05-export.png) | ![批量](docs/screenshots/06-batch.png) |
 
-> 左上就是完整创建流程：传图/贴链接/说主题 → 选出片方式（🆓 免费快剪 ¥0 / ✨ AI 生成成片·按秒标价）→ 选带货形式 → 开始生成。逐步图解见[**小白使用教程**](TUTORIAL.md)，网页速览见[官网使用手册](https://xixihhhh.github.io/clipforge/guide.html)。
+> 左上就是完整创建流程：传图/贴链接/说主题 → 选出片方式（🆓 免费快剪 ¥0 / ✨ AI 生成成片·按秒标价）→ 选带货形式 → 开始生成。逐步图解见[**小白使用教程**](TUTORIAL.md)，网页速览见[原项目官网使用手册](https://xixihhhh.github.io/clipforge/guide.html)。
 
-<p align="center"><img src="docs/showcase-platforms.png" alt="ClipForge 一键产出抖音 / 快手 / 小红书 / TikTok 竖屏带货短视频，全程不出真人脸" width="820"/></p>
+<p align="center"><img src="docs/showcase-platforms.png" alt="万镜工场一键产出抖音 / 快手 / 小红书 / TikTok 竖屏带货短视频，全程不出真人脸" width="820"/></p>
 
 ---
 
@@ -154,7 +153,7 @@ docker run -d -p 3000:3000 -v clipforge-data:/data ghcr.io/xixihhhh/clipforge
 
 ## ✅ 合规默认开：国内发布不踩坑
 
-国内平台（抖音 / 快手 / 小红书）对**未标识 AI 内容自动限流**、对**广告法违禁词直接压量**。ClipForge 把合规做成**默认就开、零配置**——出片即合规，不用你事后补：
+国内平台（抖音 / 快手 / 小红书）对**未标识 AI 内容自动限流**、对**广告法违禁词直接压量**。万镜工场把合规做成**默认就开、零配置**——出片即合规，不用你事后补：
 
 - **AIGC 标识（显式 + 隐式双层，对齐国标 GB 45438-2025）**：成片**默认烧录片头「内容由 AI 生成」角标**（左上角 ≥2 秒，满足抖音 2026-07 新规——仅 AI 配音也属须标注内容；可关，关了发布门禁会提示风险）+ 自动写入**隐式文件元数据**（生成合成标签 / 服务提供者 / 内容制作编号），导出页另备一键复制的「AI 生成」声明文案——躲开平台对未标识 AI 内容的限流。
 - **发布前「限流自检」**：广告法风险词 / 开场钩子 / 时长甜区 / 字幕可读性 / 行动号召 / 带货三段式 / AIGC 标识状态，逐项 ✓⚠✗ + **具体改法**（不打假分数），出片前一眼看出会不会被限流。
@@ -178,7 +177,7 @@ docker run -d -p 3000:3000 -v clipforge-data:/data ghcr.io/xixihhhh/clipforge
 - **📈 效果回流（数据飞轮·学出爆款）**：发布后在导出页回填这条的播放/点赞/成交，跨项目按品类聚合出**哪种脚本风格、哪个开场钩子更能卖**，**直接回灌到下一次脚本生成**——「智能推荐」风格按你的实测转化优先、Prompt 带上历史转化提示，把「凭感觉」变成「用数据」。冷启动无数据时自动回落，不打扰。
 - **📝 字幕可导出**：成片内烧字幕之外，可一键导出 **SRT / WebVTT**（`/api/project/[id]/subtitle?format=srt|vtt`），用于二次剪辑、平台原生字幕、无障碍与再校对。
 
-<p align="center"><img src="docs/hero.png" alt="ClipForge 带货工作流：商品图 → AI 提炼卖点写脚本 → 商品保真配画面 → 免费配音字幕 → 抖音/快手/小红书/TikTok 卖货短视频" width="820"/></p>
+<p align="center"><img src="docs/hero.png" alt="万镜工场带货工作流：商品图 → AI 提炼卖点写脚本 → 商品保真配画面 → 免费配音字幕 → 抖音/快手/小红书/TikTok 卖货短视频" width="820"/></p>
 
 ## 💡 带货实战：一张商品图 → 30 秒一条
 
@@ -196,9 +195,9 @@ docker run -d -p 3000:3000 -v clipforge-data:/data ghcr.io/xixihhhh/clipforge
 
 ---
 
-## 🆚 做一条带货视频：传统外包 vs ClipForge
+## 🆚 做一条带货视频：传统外包 vs 万镜工场
 
-| 痛点 | 传统方式 | ClipForge |
+| 痛点 | 传统方式 | 万镜工场 |
 |------|---------|---------|
 | **脚本创作** | 编导写脚本 1-2 小时 | AI 30 秒生成 3 套脚本 |
 | **素材制作** | 拍摄+修图 1-3 天 | AI 生图/生视频，分钟级出片 |
@@ -211,7 +210,7 @@ docker run -d -p 3000:3000 -v clipforge-data:/data ghcr.io/xixihhhh/clipforge
 
 ### 和同类工具比呢？
 
-| 你在意的 | **ClipForge** | 传统开源拼接工具 | 商业 AI 视频 SaaS | 手工剪辑软件 |
+| 你在意的 | **万镜工场** | 传统开源拼接工具 | 商业 AI 视频 SaaS | 手工剪辑软件 |
 |---|:---:|:---:|:---:|:---:|
 | **商品保真**（原图不变形出镜） | ✅ image-to-image 锁定 | ❌ 关键词配库存素材，商品不出镜 | ⚠️ 部分支持，效果看模型 | ➖ 手动贴原图 |
 | **动态镜头质量** | ✅ i2v + 链式无缝转场 + 运镜可控可重跑 | ❌ 静图 / 库存视频拼接 | ✅ 多为 i2v | ➖ 取决于你拍的素材 |
@@ -221,14 +220,14 @@ docker run -d -p 3000:3000 -v clipforge-data:/data ghcr.io/xixihhhh/clipforge
 | **无水印 + 数据在本机** | ✅ 开源自部署全本地 | ✅ | ❌ 素材上传云端，免费档常带水印 | ❌ 云端处理 |
 | **Agent / 自动化**（MCP · CLI · 批量） | ✅ MCP + CLI + Skill + 批量出片 | ⚠️ 部分有 API | ⚠️ 部分有 API | ❌ |
 
-> 以各产品公开资料为准（2026-07），功能随版本演进；ClipForge 与上述产品均无关联，仅作选型参考。
+> 以各产品公开资料为准（2026-07），功能随版本演进；万镜工场与上述产品均无关联，仅作选型参考。
 
 ---
 
 ## ❓ 常见问题 FAQ
 
-**ClipForge 是什么？**
-ClipForge（原带货剪手 / daihuo-jianshou）是一款**开源免费的 AI 带货短视频工具**：上传一张商品图，AI 自动提炼卖点、写带货脚本、**保持商品原图不变形**、配画面 + 配音 + 字幕，一键产出抖音小店 / 快手 / 小红书 / 视频号 / TikTok Shop 卖货短视频；也支持「一句话主题成片」做任意非带货题材。
+**万镜工场是什么？**
+万镜工场（英文名 AdFoundry）是一款**开源免费的 AI 带货短视频工具**，fork 自开源项目 [ClipForge](https://github.com/xixihhhh/clipforge)（原『带货剪手 / daihuo-jianshou』）：上传一张商品图，AI 自动提炼卖点、写带货脚本、**保持商品原图不变形**、配画面 + 配音 + 字幕，一键产出抖音小店 / 快手 / 小红书 / 视频号 / TikTok Shop 卖货短视频；也支持「一句话主题成片」做任意非带货题材。
 
 **真的完全免费吗？需要 API Key 吗？**
 免费路径 **0 Key**：素材用免费可商用 CC 库（Openverse 图片 + Wikimedia 实拍视频），配音用免费微软 Edge TTS，合成用本地 FFmpeg。只有想用付费 AI 生图 / 生视频模型时，才需要对应平台的 Key。
@@ -240,7 +239,7 @@ ClipForge（原带货剪手 / daihuo-jianshou）是一款**开源免费的 AI �
 没有水印。自部署 + 开源（AGPL-3.0），成片干净，可商用（第三方素材按其授权使用，导出附带署名 credits）。
 
 **和剪映 / 商业 AI 视频 SaaS 有什么区别？**
-ClipForge **开源、本地运行、无水印、免费路径零成本、数据不出本机**；商业 SaaS 通常按条扣费、带水印、需把素材上传云端。
+万镜工场**开源、本地运行、无水印、免费路径零成本、数据不出本机**；商业 SaaS 通常按条扣费、带水印、需把素材上传云端。
 
 **完全不会用、每一步都想有人带？**
 看 [**小白使用教程 TUTORIAL.md**](TUTORIAL.md)（[English](TUTORIAL.en.md)）：安装三选一、配 Key 三条路、3 分钟出第一条免费片、AI 成片花钱前必读、导演模式逐页说明、报错对照表、数据存哪怎么备份——每一步点哪里都写了。
@@ -252,7 +251,7 @@ ClipForge **开源、本地运行、无水印、免费路径零成本、数据�
 一键适配抖音 (9:16) / 快手 / 小红书 (3:4) / 视频号 / TikTok / Reels / Shorts；界面与文档支持**中文 / English**，按系统语言自动切换。
 
 **可以让 AI 助手（Claude / Cursor）直接生成视频吗？**
-可以。ClipForge 内置 **MCP Server**（`clipforge_product_script` 贴商品链接直接出带货脚本，详见 [mcp/README.md](mcp/README.md)）+ **agent Skill**（[skills/clipforge-video](skills/clipforge-video/SKILL.md)，把整条出片流水线教给编程助手）。装法任选：`npx skills add xixihhhh/clipforge` 一条命令；Claude Code 里 `/plugin marketplace add xixihhhh/clipforge` 装 skill+MCP 二合一；或把 [skills/README](skills/README.md) 的 Setup prompt 贴给你的 agent 让它自装。
+可以。万镜工场内置 **MCP Server**（`clipforge_product_script` 贴商品链接直接出带货脚本，详见 [mcp/README.md](mcp/README.md)）+ **agent Skill**（[skills/clipforge-video](skills/clipforge-video/SKILL.md)，把整条出片流水线教给编程助手）。装法任选：`npx skills add rainwong2008/adfoundry` 一条命令；Claude Code 里 `/plugin marketplace add rainwong2008/adfoundry` 装 skill+MCP 二合一；或把 [skills/README](skills/README.md) 的 Setup prompt 贴给你的 agent 让它自装。
 
 **能在命令行里直接出片吗？**
 可以。内置 **命令行 CLI**：先启动实例，再设好 `CLIPFORGE_LLM_*` 环境变量，然后：
@@ -280,7 +279,7 @@ node bin/clipforge.mjs --help          # 全部命令与参数
 可以，`trends` + `create` 接上 cron 就是一台日更机（首页的「日更 · 按人设选题」是同一逻辑的网页版）。示例：每天 9 点从国内热榜拿榜一出一条待发成片：
 ```bash
 crontab -e   # 加入下面一行（把路径和环境变量换成你的）
-# 0 9 * * * cd /path/to/clipforge && TOPIC=$(node bin/clipforge.mjs trends --json | python3 -c "import json,sys;print(json.load(sys.stdin)['topics'][0]['title'])") && node bin/clipforge.mjs create --topic "$TOPIC" --bgm >> daily.log 2>&1
+# 0 9 * * * cd /path/to/adfoundry && TOPIC=$(node bin/clipforge.mjs trends --json | python3 -c "import json,sys;print(json.load(sys.stdin)['topics'][0]['title'])") && node bin/clipforge.mjs create --topic "$TOPIC" --bgm >> daily.log 2>&1
 ```
 出的是**待发草稿**（本地成片文件），发布动作留给你自己——自动发布各平台有账号风控与协议风险，我们不做。
 
@@ -416,11 +415,11 @@ crontab -e   # 加入下面一行（把路径和环境变量换成你的）
 ### 🐳 Docker 自托管（最快，无需装 Node / FFmpeg）
 
 ```bash
-docker run -d -p 3000:3000 -v clipforge-data:/data ghcr.io/xixihhhh/clipforge
+docker run -d -p 3000:3000 -v adfoundry-data:/data ghcr.io/rainwong2008/adfoundry
 # 打开 http://localhost:3000 —— 免 Key 即可出片（免费素材 + Edge TTS）
 ```
 
-镜像内置 ffmpeg 与中文字幕字体，数据（项目 / 商品图 / 成片）持久化在 `clipforge-data` 卷。要接 AI 生图/生视频/付费配音时，进「设置」填对应平台 Key 即可。镜像地址 `ghcr.io/xixihhhh/clipforge`（见仓库 **Packages**），随每次 Release 自动构建并冒烟测试。
+镜像内置 ffmpeg 与中文字幕字体，数据（项目 / 商品图 / 成片）持久化在 `adfoundry-data` 卷。要接 AI 生图/生视频/付费配音时，进「设置」填对应平台 Key 即可。镜像地址 `ghcr.io/rainwong2008/adfoundry`（见仓库 **Packages**），随每次 Release 自动构建并冒烟测试。
 
 ### 本地开发
 
@@ -428,8 +427,8 @@ docker run -d -p 3000:3000 -v clipforge-data:/data ghcr.io/xixihhhh/clipforge
 
 ```bash
 # 克隆项目
-git clone https://github.com/xixihhhh/clipforge.git
-cd clipforge
+git clone https://github.com/rainwong2008/adfoundry.git
+cd adfoundry
 
 # 安装依赖（必须用 pnpm）
 pnpm install
@@ -558,7 +557,7 @@ src/
 | **Seedance 1.5 Pro** | 火山引擎 / Atlas Cloud | - | T2V / I2V | 字节豆包，电影级画质 |
 | **万相 2.6** | 阿里百炼 | - | I2V | 商品图生视频效果好 |
 
-> **省钱提示：** 默认的 Seedance 2.5 画质与原生人声最好，但也最贵（$0.134/秒）。**分辨率比换模型更能省**——实测同一条片 1080p 约为 480p 基准价的 4.5 倍、720p 约 2 倍，ClipForge 默认已用 720p。想再省就换模型：一键整片推荐 **万相 3.0**（$0.04/秒），逐镜生成推荐 **MiniMax H3 Max**（$0.048/秒）。详见[教程的费用章节](TUTORIAL.md#71-先说钱一条多少)。
+> **省钱提示：** 默认的 Seedance 2.5 画质与原生人声最好，但也最贵（$0.134/秒）。**分辨率比换模型更能省**——实测同一条片 1080p 约为 480p 基准价的 4.5 倍、720p 约 2 倍，万镜工场默认已用 720p。想再省就换模型：一键整片推荐 **万相 3.0**（$0.04/秒），逐镜生成推荐 **MiniMax H3 Max**（$0.048/秒）。详见[教程的费用章节](TUTORIAL.md#71-先说钱一条多少)。
 >
 > 以上是内置精选（含中文名与能力守卫）。启用 Atlas Cloud 后，设置页还会**动态发现全站 200+ 视频模型**（Youchuan、HappyHorse、Grok Imagine、Gemini Omni Flash……含单价标注），提交时按各模型公开 schema 自动构参——平台上新模型无需等软件升级。
 
@@ -611,7 +610,7 @@ pnpm dist       # 出 .dmg 安装包
 
 ## Roadmap
 
-> 逐版本更新记录见 [GitHub Releases](https://github.com/xixihhhh/clipforge/releases)；各能力的使用细节见上方[核心功能](#核心功能)。
+> 逐版本更新记录见 [GitHub Releases](https://github.com/rainwong2008/adfoundry/releases)（早期版本历史见[原项目 Releases](https://github.com/xixihhhh/clipforge/releases)）；各能力的使用细节见上方[核心功能](#核心功能)。
 
 **已完成**
 - ✅ **出片主链路**：AI 脚本（5 品类 × 十风格四形态 + 黄金 3 秒 + 平台 SEO）→ 商品保真素材（7 平台 30+ 模型）→ i2v 动态镜头（运镜引擎 / 命名运镜预设每镜可选 / 画面风格 Look / 链式首尾帧 / 强度三档 / 逐镜重跑）→ FFmpeg 合成（爆款字幕 / 免费多音色配音 / BGM / 智能转场 / 风格配方 / 质量预设）→ 多平台导出（构图预览与码率预算）
@@ -633,20 +632,20 @@ pnpm dist       # 出 .dmg 安装包
 
 ---
 
-## 同作者项目
+## 原作者项目
 
-✂️ **[HotClip 爆款切片](https://github.com/xixihhhh/hotclip)** — 开源 AI 长视频切片工具:播客/直播回放丢进去,AI 找爆点,一键切出竖屏+逐字字幕成片,素材全程不出你的电脑。**ClipForge 从一张图造短视频,HotClip 把长视频切成爆款**——上面规划里的「长视频切爆款」,现在就能用它。
+✂️ **[HotClip 爆款切片](https://github.com/xixihhhh/hotclip)** — 开源 AI 长视频切片工具:播客/直播回放丢进去,AI 找爆点,一键切出竖屏+逐字字幕成片,素材全程不出你的电脑。**万镜工场从一张图造短视频,HotClip 把长视频切成爆款**——上面规划里的「长视频切爆款」,现在就能用它。
 
 ---
 
 ## License
 
-[AGPL-3.0](LICENSE) © 2026 xixihhhh
+[AGPL-3.0](LICENSE) © 2026 xixihhhh（原项目 ClipForge 作者）
 
-修改 / 再发布（含 SaaS）须开源并保留署名。
+本仓库为社区 fork（万镜工场 AdFoundry），继续遵循 AGPL-3.0；修改 / 再发布（含 SaaS）须开源并保留署名。
 
 ---
 
-<sub><b>关键词 / Keywords</b>：AI 短视频生成工具 · AI 带货短视频 · 短剧带货 / 剧情带货视频 · 图生视频 image-to-video · AI 运镜 / 无缝转场 · 一句话成片 · 文字转视频 · text to video · faceless video generator · AI short video maker · 抖音 / 快手 / 小红书 / TikTok / Reels / YouTube Shorts 制作 · AI UGC 电商广告 · AI 配音 / AI voiceover · 多角色多音色配音 · 免费素材自动剪辑 · 开源 / 自部署视频工具 · AI 脚本生成 · MCP server · ClipForge（原带货剪手 / daihuo-jianshou）。</sub>
+<sub><b>关键词 / Keywords</b>：AI 短视频生成工具 · AI 带货短视频 · 短剧带货 / 剧情带货视频 · 图生视频 image-to-video · AI 运镜 / 无缝转场 · 一句话成片 · 文字转视频 · text to video · faceless video generator · AI short video maker · 抖音 / 快手 / 小红书 / TikTok / Reels / YouTube Shorts 制作 · AI UGC 电商广告 · AI 配音 / AI voiceover · 多角色多音色配音 · 免费素材自动剪辑 · 开源 / 自部署视频工具 · AI 脚本生成 · MCP server · 万镜工场 AdFoundry（fork 自 ClipForge）。</sub>
 
-<sub>ClipForge 是独立开源项目，与抖音、快手、小红书、TikTok、YouTube、Shopify、Amazon、Microsoft、OpenAI 及任何模型供应商无官方关联；使用第三方模型与素材请遵守其各自条款。</sub>
+<sub>万镜工场 AdFoundry 是开源项目 ClipForge 的社区 fork，与原项目作者无隶属关系，也与抖音、快手、小红书、TikTok、YouTube、Shopify、Amazon、Microsoft、OpenAI 及任何模型供应商无官方关联；使用第三方模型与素材请遵守其各自条款。</sub>

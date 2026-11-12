@@ -1,19 +1,17 @@
-<p align="center"><img src="docs/banner.en.png" alt="ClipForge — open-source AI e-commerce short-video generator: turn one product photo into a TikTok Shop / Reels / Shorts / Douyin ad that sells" width="820"/></p>
+<p align="center"><img src="docs/banner.en.png" alt="AdFoundry — open-source AI e-commerce short-video generator: turn one product photo into a TikTok Shop / Reels / Shorts / Douyin ad that sells" width="820"/></p>
 
-# ClipForge — Open-source AI shopping-video maker ｜ One product photo, an auto-generated video that sells
+# AdFoundry (万镜工场) — Open-source AI shopping-video maker ｜ One product photo, an auto-generated video that sells
 
 > **Turn one product photo into a short video that actually converts.** Upload a product image → AI extracts selling points · writes the script · **locks your product so it never gets distorted** · adds voiceover + subtitles + BGM → in tens of seconds you get a video ready to post to **TikTok Shop / Reels / Shorts / Douyin / Kuaishou / Xiaohongshu**. **One person, dozens of videos a day · 0-cost batch production · open-source, no watermark.**
 >
-> <sub>📌 Formerly『**带货剪手** / daihuo-jianshou』— repo · stars · history all carried over; also does "one-sentence topic → video" for any non-commerce subject.</sub>
-
-<p align="center"><strong>🌐 Website: <a href="https://xixihhhh.github.io/clipforge/en.html">xixihhhh.github.io/clipforge</a></strong> — see what ClipForge can sell for you in 30 seconds</p>
+> <sub>📌 This repo is a community fork of the open-source project [**ClipForge**](https://github.com/xixihhhh/clipforge) (formerly 带货剪手, [original website](https://xixihhhh.github.io/clipforge/en.html)); all features and history carried over; also does "one-sentence topic → video" for any non-commerce subject.</sub>
 
 <p align="center"><strong>🧑‍🎓 First time here? Start with the 👉 <a href="TUTORIAL.en.md">beginner tutorial (every step spelled out)</a></strong> · <a href="TUTORIAL.md">中文教程</a><br/><sub>Install · add one key · your first free video in 3 minutes · troubleshooting table · where your data lives</sub></p>
 
 <p align="right"><strong>English</strong> · <a href="README.md">中文</a></p>
 
 <p align="center">
-  <img src="https://github.com/xixihhhh/clipforge/actions/workflows/ci.yml/badge.svg" alt="CI" />
+  <img src="https://github.com/rainwong2008/adfoundry/actions/workflows/ci.yml/badge.svg" alt="CI" />
   <img src="https://img.shields.io/badge/License-AGPL%20v3-blue?style=flat-square" alt="License: AGPL v3" />
   <img src="https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js" alt="Next.js 16" />
   <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react" alt="React 19" />
@@ -21,10 +19,9 @@
   <img src="https://img.shields.io/badge/Tailwind-4-06B6D4?style=flat-square&logo=tailwindcss" alt="Tailwind CSS 4" />
   <img src="https://img.shields.io/badge/FFmpeg-compositing-007808?style=flat-square&logo=ffmpeg" alt="FFmpeg" />
   <img src="https://img.shields.io/badge/AI-multi--model-FF6F00?style=flat-square" alt="AI Multi-Model" />
-  <a href="https://skills.sh/xixihhhh/clipforge"><img src="https://skills.sh/b/xixihhhh/clipforge" alt="Agent Skill installs" /></a>
 </p>
 
-## ✨ Why ClipForge
+## ✨ Why AdFoundry
 
 | Exclusive | In one line |
 |---|---|
@@ -52,13 +49,13 @@
 - 🧠 **Intelligent production system (v0.8.93)**: ① Director mode gains one production console for the nine-stage workflow, execution location, billing status, real model-price ranges, time estimates, and goal-based model routing; applying a recommendation changes the real default video model, while unknown prices stay honest ranges. ② Project-level structured intent and a visual bible compile into actual image and image-to-video prompts, carrying character/product/outfit/environment/lighting anchors across shots and blocking explicit forbidden changes before a paid request. ③ The media-analysis workspace reads subjects, light, palette, composition, camera motion, and pacing from any image/video, derives a reusable prompt, and saves the finding into a project. ④ Scripts, assets, cloud tasks, compositions, and manual snapshots form one version tree; failures are classified into auth/parameter/moderation/input-limit/media/detached-task recovery paths. ⑤ Instant preview reuses the real local 720p / veryfast / CRF26 compose tier without regenerating AI assets; finished-video QC turns black/frozen frames, silence, loudness, and spec drift into a repair plan, with confirmed free recomposition and no silent paid reruns.
 - 🔬 **Shot quality gate (v0.8.98)**: every generated take remains available. Per-shot review scores visible evidence across visual fidelity, temporal coherence, script alignment, subject identity, action binding, continuity, and text; only the candidate a human accepts becomes the real compose input. Project-local acceptance history improves model routing, while regeneration or model switching is suggested but never purchased automatically.
 - 🧬 **Adaptive shot conditioning (v0.8.99)**: each shot compiles its keyframe, character sheet, product image, and previous real tail frame into the strongest reference pack the selected model can accept. Capable models generate exact dialogue, lip sync, ambience, and object sounds together; others fall back before spending to keyframes or post voice. Every take records its real anchor count, audio path, and capability fallback for inspection in the quality gate.
-- 🩺 **Precision shot repair (v0.9.0)**: quality evidence becomes a bounded retake window with optional timed identity, product, composition, or continuity anchors. Preview the real window, billed model duration, price, and fallbacks before confirming; ClipForge generates only that segment, splices it into the untouched source while preserving source audio, keeps the original take, and can resume local finalization after a remote task completes.
+- 🩺 **Precision shot repair (v0.9.0)**: quality evidence becomes a bounded retake window with optional timed identity, product, composition, or continuity anchors. Preview the real window, billed model duration, price, and fallbacks before confirming; AdFoundry generates only that segment, splices it into the untouched source while preserving source audio, keeps the original take, and can resume local finalization after a remote task completes.
 - 🎚️ **Cut continuity & local mastering (v0.9.1)**: samples both sides of real splice points and reports time-specific, inspectable exposure, chroma, and saturation deltas, plus whole-film EBU R128 loudness. Analysis is the default and calls no model. When explicitly selected, two-pass loudness normalization or temporal deflicker creates a new master version without overwriting the source; deflicker is never enabled automatically.
 - 🧾 **Reliable edit queue and caption corrections**: name and batch-preview clips, track progress, cancel individual renders, and retry immutable saved plans after interruption. Search long transcripts with bounded sections and playback location; versioned phrase corrections flow into captions. [Details](docs/transcript-reliability.md).
 - 🧪 **Local ASR quality checks**: timestamp-capable Tiny / Base / Small weights with a repeatable local CER, timing and memory benchmark. Small is optional; the lightweight default remains. [Evaluation](docs/asr-quality.md).
 - ✂️ **Clip workbench**: find sections in transcribed footage by spoken phrase and target duration, preview source excerpts, then keep a selected or manually entered range. Undo, retimed captions, and NLE exports share the same range across the web app, CLI and MCP. Runs locally with existing transcripts; no new model needed.
 - ✂️ **Long-form text editing (v0.8.97)**: bounded-memory local transcription now handles up to two hours with cancel/resume checkpoints. Remove words to remove video, review diffs and versions, then hand editable OTIO / EDL / CSV timelines to a professional NLE. Sources and earlier transcripts remain untouched.
-- 🚦 **Free / AI dual path**: creation asks exactly two questions — how the visuals get made (🆓 free quick cut, $0 in ~2 min / ✨ AI-generated film, per-second cost printed right on the option) and the format (smart pick / talking presenter with your own presenter / mini drama / graphic montage). The free path runs fully hands-off; the AI path treats the free script as a text-level confirmation gate — read the voice-over, click "Generate with AI" once, and the grid-locked storyboard → one-call film (native cuts + spoken lines) runs automatically. Open-source BYOK: usage is billed by your chosen model platform; ClipForge itself stays free.
+- 🚦 **Free / AI dual path**: creation asks exactly two questions — how the visuals get made (🆓 free quick cut, $0 in ~2 min / ✨ AI-generated film, per-second cost printed right on the option) and the format (smart pick / talking presenter with your own presenter / mini drama / graphic montage). The free path runs fully hands-off; the AI path treats the free script as a text-level confirmation gate — read the voice-over, click "Generate with AI" once, and the grid-locked storyboard → one-call film (native cuts + spoken lines) runs automatically. Open-source BYOK: usage is billed by your chosen model platform; AdFoundry itself stays free.
 - ⚖️ **Easy mode, full quality**: hands-off removes the operating, not the quality features. All five one-tap chains (web free quick cut / AI film / batch / CLI create / MCP create_video) automatically run the judge panel before any footage or generation money — four judges tear the lines apart and length-preserving rewrites are applied in place (the report stays visible in the editor; no LLM configured → silently skipped, never blocking the chain). On the AI path, a presenter picked without a reference sheet gets their four-view sheet generated on the spot and saved back to the library for reuse across videos; the one-tap film's timecoded prompt now carries each shot's camera move. The default LLM tier also moves up to DeepSeek V4 Pro (the old v3.2 default leaked thinking text into JSON output in field tests) — the settings model picker still lets you choose any model.
 - 🎭 **Realism kit (built to kill the "obviously AI" look)**: ① a new "real" look family — phone raw / front-cam selfie (26mm edge distortion, arm in frame) / propped static — with the camera-identity opener injected at the FRONT of the video prompt where tokens weigh most; ② voice grounding on by default — TTS narration passes a phone-mic band + AGC-style compression + light exciter chain, with a room-tone bed under the whole timeline so gaps never drop to digital silence (measured: -91dB → -58dB between sentences; native model voices are never touched); ③ three new native-feel layers: a walking strength (micro-rotation), lens halation, and a platform-transcode look (720p generational loss + CRF27 — reads like an upload that already survived one re-encode); ④ the one-tap film prompt adopts Seedance 2.5's official syntax — `{}` dialogue brackets, an up-front reference-mapping + keyframe-order declaration, the official no-captions/no-bgm negative channel, and a dialogue-density check against lip-sync drift.
 - 🪝 **Attention upgrade (how commerce videos keep people watching)**: the hook library grows from 10 to 16 patterns with six trust/social-proof types — confession, honest-flaw opener, elimination haul, cost math, comment reply, hype-confirm (ad-platform data: non-stop praise is the #1 "this is an ad" signal); the script prompt gains retention-and-conversion hard rules — product visible in the first 3 seconds (63% of top-CTR videos do), a mandatory mid-video re-hook at 40–60% for scripts over 20s, dual CTA placement (a casual first mention around 70% + a final-shot repeat with a pointing gesture), and tiered urgency (personal-experience soft urgency by default; fabricated scarcity is an ad-law violation) with the structure judge checking the mid-hook; the publish pack adds a comment-ops kit — a pinned self-Q&A plus objection reply templates (comments are the video's second landing page; seeded fake comments deliberately NOT included, with a compliance note). Field-tested with a real LLM: the rules land — the generated script drops its first CTA mention at ~70% and adopts the soft-urgency line.
@@ -84,7 +81,9 @@
 
 </details>
 
-## 🧩 More from the same author
+## 🧩 From the original author
+
+> Other works by the original project's author, not maintained by this fork.
 
 - 🎭 [**Dramake**](https://github.com/xixihhhh/ai-short-drama-skill): a director-level AI short-drama Agent Skill that turns an idea, novel, or screenplay into a traceable workflow covering scripts, character bibles, storyboards, model and budget routing, voices, editing, and QA. It supports Codex, Claude Code, and WorkBuddy. Install it with `npx skills add xixihhhh/ai-short-drama-skill --skill dramake`.
 
@@ -92,7 +91,7 @@ Want higher quality? Add one key: a single interface aggregates **7 platforms, 3
 
 ## 🎬 Sample: one product photo in, a postable video out (Seedance 2.5 field test)
 
-**The input is just the product photo below plus a one-sentence request.** Script, storyboard, visuals and voice are all generated by ClipForge: the judge panel tears up the "hi everyone" draft lines → one storyboard-grid generation locks the person/scene/product → one-tap full film:
+**The input is just the product photo below plus a one-sentence request.** Script, storyboard, visuals and voice are all generated by AdFoundry: the judge panel tears up the "hi everyone" draft lines → one storyboard-grid generation locks the person/scene/product → one-tap full film:
 
 <table>
   <tr>
@@ -123,15 +122,15 @@ Two more outputs from the same pipeline (input → output):
   </tr>
 </table>
 
-Voices, dialogue and lip-sync are native model output, untouched; they autoplay on the <a href="https://xixihhhh.github.io/clipforge/en.html">website</a>.
+Voices, dialogue and lip-sync are native model output, untouched; samples are hosted on the original project's <a href="https://xixihhhh.github.io/clipforge/en.html">website</a> and autoplay there.
 
 ## 🚀 Run it in 30 seconds
 
 ```bash
-docker run -d -p 3000:3000 -v clipforge-data:/data ghcr.io/xixihhhh/clipforge
+docker run -d -p 3000:3000 -v adfoundry-data:/data ghcr.io/rainwong2008/adfoundry
 ```
 
-Open `http://localhost:3000` — **render your first video with no key at all** (free stock + free voiceover). Local dev / desktop app / model setup: see [Quick start](#quick-start).
+Open `http://localhost:3000` — **render your first video with no key at all** (free stock + free voiceover). The image is auto-built by CI on every Release; if not published yet, run [from source](#local-development) first. Local dev / desktop app / model setup: see [Quick start](#quick-start).
 
 > 🧑‍🎓 **Not a developer?** Don't start here — read the [**beginner tutorial**](TUTORIAL.en.md): from downloading the desktop app to your first video, every click spelled out.
 
@@ -143,9 +142,9 @@ Open `http://localhost:3000` — **render your first video with no key at all** 
 | **Compose · voiceover/subtitles/BGM** | **Export · multi-platform** | **Batch production** |
 | ![Compose](docs/screenshots/04b-video.en.png) | ![Export](docs/screenshots/05-export.en.png) | ![Batch](docs/screenshots/06-batch.en.png) |
 
-> Top-left is the whole creation flow: photo / URL / topic → pick a path (🆓 free quick cut at $0 / ✨ AI film with the per-second price on the option) → pick a format → start. Step-by-step: [**beginner tutorial**](TUTORIAL.en.md); condensed web version: [User Guide](https://xixihhhh.github.io/clipforge/guide.en.html).
+> Top-left is the whole creation flow: photo / URL / topic → pick a path (🆓 free quick cut at $0 / ✨ AI film with the per-second price on the option) → pick a format → start. Step-by-step: [**beginner tutorial**](TUTORIAL.en.md); condensed web version: the original project's [User Guide](https://xixihhhh.github.io/clipforge/guide.en.html).
 
-<p align="center"><img src="docs/showcase-platforms.en.png" alt="ClipForge produces faceless vertical shopping videos for TikTok Shop, Reels, Shorts, Douyin, Kuaishou and Xiaohongshu — never showing a real face" width="820"/></p>
+<p align="center"><img src="docs/showcase-platforms.en.png" alt="AdFoundry produces faceless vertical shopping videos for TikTok Shop, Reels, Shorts, Douyin, Kuaishou and Xiaohongshu — never showing a real face" width="820"/></p>
 
 ---
 
@@ -153,7 +152,7 @@ Open `http://localhost:3000` — **render your first video with no key at all** 
 
 ## ✅ Compliance-first by default (ship to China without getting throttled)
 
-Chinese platforms (Douyin / Kuaishou / Xiaohongshu) **silently throttle unlabeled AI content** and **suppress ad-law banned terms**. ClipForge makes compliance **on by default, zero config** — it ships compliant, you don't patch it afterward:
+Chinese platforms (Douyin / Kuaishou / Xiaohongshu) **silently throttle unlabeled AI content** and **suppress ad-law banned terms**. AdFoundry makes compliance **on by default, zero config** — it ships compliant, you don't patch it afterward:
 
 - **AIGC labeling (explicit + implicit, aligned with China's GB 45438-2025)**: every render **burns a default-on "内容由 AI 生成" opening badge** (top-left, >=2s — Douyin's 2026-07 rules require it, and AI voice-over alone triggers the requirement; opt-out is flagged by the release gate) plus auto-written **implicit file metadata** (generation/synthesis tags, service provider, content ID), and the export page provides a copy-ready "AI-generated" declaration line — dodging the throttle platforms apply to unlabeled AI content.
 - **Pre-publish self-check**: ad-law risk terms / opening hook / duration sweet-spot / subtitle readability / call-to-action / e-commerce 3-act structure / AIGC-label status, each flagged ✓⚠✗ with a **concrete fix** (no fake score) — spot throttling risk before you render.
@@ -173,7 +172,7 @@ Chinese platforms (Douyin / Kuaishou / Xiaohongshu) **silently throttle unlabele
 - **🛒 Product-card overlay (cart feel)**: optionally overlay a product card in the lower-left — thumbnail + name + a yellow "tap below to buy →" prompt, shown for the first few seconds to reinforce conversion.
 - **📋 Copy-and-post pack**: the export page generates catchy titles + #hashtags + caption copy in one click; even without an AI key, a **key-free template version** outputs per category/platform — just copy and post.
 
-<p align="center"><img src="docs/hero.en.png" alt="ClipForge workflow: product photo → AI selling points & script → product-fidelity visuals → free voiceover + subtitles → TikTok / Reels / Shorts / Douyin shopping video" width="820"/></p>
+<p align="center"><img src="docs/hero.en.png" alt="AdFoundry workflow: product photo → AI selling points & script → product-fidelity visuals → free voiceover + subtitles → TikTok / Reels / Shorts / Douyin shopping video" width="820"/></p>
 
 ## 💡 In practice: one product photo → a video in 30 seconds
 
@@ -191,9 +190,9 @@ Using the sample "Soft Thick Facial Tissue":
 
 ---
 
-## 🆚 Making a shopping video: traditional outsourcing vs ClipForge
+## 🆚 Making a shopping video: traditional outsourcing vs AdFoundry
 
-| Pain point | Traditional way | ClipForge |
+| Pain point | Traditional way | AdFoundry |
 |------|---------|---------|
 | **Scriptwriting** | Director writes for 1–2 hours | AI generates 3 scripts in 30s |
 | **Asset creation** | Shoot + retouch, 1–3 days | AI image/video, render in minutes |
@@ -206,7 +205,7 @@ Using the sample "Soft Thick Facial Tissue":
 
 ### And against similar tools?
 
-| What you care about | **ClipForge** | Traditional OSS stitchers | Commercial AI video SaaS | Manual-first editors |
+| What you care about | **AdFoundry** | Traditional OSS stitchers | Commercial AI video SaaS | Manual-first editors |
 |---|:---:|:---:|:---:|:---:|
 | **Product fidelity** (your real product, undistorted) | ✅ image-to-image lock | ❌ keyword-matched stock, product never appears | ⚠️ partial, model-dependent | ➖ paste it manually |
 | **Moving-shot quality** | ✅ i2v + seamless chained transitions + adjustable/redo-able camera | ❌ stills / stock clips stitched | ✅ mostly i2v | ➖ depends on your footage |
@@ -216,14 +215,14 @@ Using the sample "Soft Thick Facial Tissue":
 | **No watermark + data stays local** | ✅ open-source, self-hosted | ✅ | ❌ cloud upload, watermarked free tier | ❌ cloud processing |
 | **Agents / automation** (MCP · CLI · batch) | ✅ MCP + CLI + Skill + batch | ⚠️ some have APIs | ⚠️ some have APIs | ❌ |
 
-> Based on public materials as of 2026-07; features evolve with each product's releases. ClipForge is unaffiliated with all of the above — comparison for evaluation only.
+> Based on public materials as of 2026-07; features evolve with each product's releases. AdFoundry is unaffiliated with all of the above — comparison for evaluation only.
 
 ---
 
 ## ❓ FAQ
 
-**What is ClipForge?**
-ClipForge (formerly 带货剪手 / daihuo-jianshou) is an **open-source, free AI shopping-video tool**: upload one product photo and AI extracts selling points, writes a sales script, **keeps your product undistorted**, fills visuals + voiceover + subtitles, and outputs a TikTok Shop / Reels / Shorts / Douyin / Kuaishou / Xiaohongshu video in one click; it also does "one-sentence topic → video" for any non-commerce subject.
+**What is AdFoundry?**
+AdFoundry (万镜工场) is an **open-source, free AI shopping-video tool**, forked from the open-source project [ClipForge](https://github.com/xixihhhh/clipforge) (formerly 带货剪手 / daihuo-jianshou): upload one product photo and AI extracts selling points, writes a sales script, **keeps your product undistorted**, fills visuals + voiceover + subtitles, and outputs a TikTok Shop / Reels / Shorts / Douyin / Kuaishou / Xiaohongshu video in one click; it also does "one-sentence topic → video" for any non-commerce subject.
 
 **Is it really free? Do I need an API key?**
 The free path is **0-key**: assets from free commercial-use CC libraries (Openverse images + Wikimedia real footage), voiceover from free Microsoft Edge TTS, compositing from local FFmpeg. You only need a key for the platform you choose when you want paid AI image/video models.
@@ -235,7 +234,7 @@ Yes. Upload a product photo and AI analyzes selling points, writes multiple sale
 No watermark. Self-hosted + open-source (AGPL-3.0); output is clean and commercially usable (third-party assets follow their own licenses; exports can include attribution credits).
 
 **How is it different from CapCut / commercial AI video SaaS?**
-ClipForge is **open-source, runs locally, no watermark, zero-cost on the free path, and your data never leaves your machine**; commercial SaaS usually charges per video, watermarks output, and requires uploading assets to the cloud.
+AdFoundry is **open-source, runs locally, no watermark, zero-cost on the free path, and your data never leaves your machine**; commercial SaaS usually charges per video, watermarks output, and requires uploading assets to the cloud.
 
 **I've never used anything like this — is there a hand-holding guide?**
 Yes: [**TUTORIAL.en.md**](TUTORIAL.en.md) ([中文](TUTORIAL.md)) — three install options, three ways to add a key, your first free video in 3 minutes, what the AI path costs before you spend, Director mode page by page, a troubleshooting table, and where your data lives.
@@ -247,7 +246,7 @@ Yes. The whole flow is automatic — AI writes the script, fills visuals, adds v
 One-click fit for TikTok / Reels / Shorts (9:16) / Douyin / Kuaishou / Xiaohongshu (3:4); the UI and docs support **中文 / English**, auto-switching by system language.
 
 **Can an AI assistant (Claude / Cursor) generate videos directly?**
-Yes. ClipForge ships an **MCP Server** (`clipforge_product_script` turns a product link straight into a sales script — see [mcp/README.md](mcp/README.md)) plus an **agent Skill** ([skills/clipforge-video](skills/clipforge-video/SKILL.md)) that teaches an assistant the whole pipeline. Install any way you like: `npx skills add xixihhhh/clipforge`; or `/plugin marketplace add xixihhhh/clipforge` in Claude Code for skill + MCP in one; or paste the Setup prompt from [skills/README](skills/README.md) to your agent and it installs itself.
+Yes. AdFoundry ships an **MCP Server** (`clipforge_product_script` turns a product link straight into a sales script — see [mcp/README.md](mcp/README.md)) plus an **agent Skill** ([skills/clipforge-video](skills/clipforge-video/SKILL.md)) that teaches an assistant the whole pipeline. Install any way you like: `npx skills add rainwong2008/adfoundry`; or `/plugin marketplace add rainwong2008/adfoundry` in Claude Code for skill + MCP in one; or paste the Setup prompt from [skills/README](skills/README.md) to your agent and it installs itself.
 
 ---
 
@@ -377,11 +376,11 @@ Scripts auto-adapt to platform algorithms; every video outputs a full SEO pack:
 ### 🐳 Self-host with Docker (fastest — no Node / FFmpeg needed)
 
 ```bash
-docker run -d -p 3000:3000 -v clipforge-data:/data ghcr.io/xixihhhh/clipforge
+docker run -d -p 3000:3000 -v adfoundry-data:/data ghcr.io/rainwong2008/adfoundry
 # Open http://localhost:3000 — make videos keyless (free stock + Edge TTS)
 ```
 
-The image bundles ffmpeg and the CJK subtitle font; your data (projects / product images / renders) persists in the `clipforge-data` volume. To enable AI image/video or paid TTS, open **Settings** and add the relevant provider key. Image: `ghcr.io/xixihhhh/clipforge` (see the repo **Packages**), auto-built and smoke-tested on every Release.
+The image bundles ffmpeg and the CJK subtitle font; your data (projects / product images / renders) persists in the `adfoundry-data` volume. To enable AI image/video or paid TTS, open **Settings** and add the relevant provider key. Image: `ghcr.io/rainwong2008/adfoundry` (see the repo **Packages**), auto-built and smoke-tested on every Release.
 
 ### Local development
 
@@ -389,8 +388,8 @@ The image bundles ffmpeg and the CJK subtitle font; your data (projects / produc
 
 ```bash
 # Clone
-git clone https://github.com/xixihhhh/clipforge.git
-cd clipforge
+git clone https://github.com/rainwong2008/adfoundry.git
+cd adfoundry
 
 # Install (pnpm required)
 pnpm install
@@ -564,7 +563,7 @@ pnpm dist       # .dmg installer
 
 ## Roadmap
 
-> Per-version history lives in [GitHub Releases](https://github.com/xixihhhh/clipforge/releases); usage details for each capability are in [Core features](#core-features) above.
+> Per-version history lives in [GitHub Releases](https://github.com/rainwong2008/adfoundry/releases) (early history in the [original project's Releases](https://github.com/xixihhhh/clipforge/releases)); usage details for each capability are in [Core features](#core-features) above.
 
 **Done**
 - ✅ **Main pipeline**: AI scripts (5 categories × ten styles in four forms + golden-3s + platform SEO) → product-faithful assets (7 platforms, 30+ models) → i2v moving shots (motion-prompt engine / named camera presets per shot / visual looks / keyframe chaining / intensity tiers / per-shot redo) → FFmpeg compositing (viral captions / free multi-voice TTS / BGM / smart transitions / style recipes / quality presets) → multi-platform export (bitrate pinned under re-compression thresholds)
@@ -586,20 +585,20 @@ pnpm dist       # .dmg installer
 
 ---
 
-## From the same author
+## From the original author
 
-✂️ **[HotClip](https://github.com/xixihhhh/hotclip)** — open-source AI long-video clipper: drop in a podcast or stream VOD, AI finds the highlights and cuts publish-ready vertical clips with word-level captions, all on your own machine. **ClipForge builds short videos from a single image; HotClip clips highlights out of long videos** — the "cut long video into viral clips" item above, available today.
+✂️ **[HotClip](https://github.com/xixihhhh/hotclip)** — open-source AI long-video clipper: drop in a podcast or stream VOD, AI finds the highlights and cuts publish-ready vertical clips with word-level captions, all on your own machine. **AdFoundry builds short videos from a single image; HotClip clips highlights out of long videos** — the "cut long video into viral clips" item above, available today.
 
 ---
 
 ## License
 
-[AGPL-3.0](LICENSE) © 2026 xixihhhh
+[AGPL-3.0](LICENSE) © 2026 xixihhhh (author of the original ClipForge project)
 
-Modification / redistribution (incl. SaaS) must stay open-source and keep attribution.
+This repository is a community fork (AdFoundry / 万镜工场) and remains AGPL-3.0; modification / redistribution (incl. SaaS) must stay open-source and keep attribution.
 
 ---
 
-<sub><b>Keywords</b>: AI short-video generator · AI shopping video · one-sentence to video · text to video · faceless video generator · AI short video maker · TikTok / Reels / Shorts / Douyin / Kuaishou / Xiaohongshu maker · AI UGC e-commerce ads · AI voiceover · free-stock auto editing · open-source / self-hosted video tool · AI script generation · MCP server · ClipForge (formerly 带货剪手 / daihuo-jianshou).</sub>
+<sub><b>Keywords</b>: AI short-video generator · AI shopping video · one-sentence to video · text to video · faceless video generator · AI short video maker · TikTok / Reels / Shorts / Douyin / Kuaishou / Xiaohongshu maker · AI UGC e-commerce ads · AI voiceover · free-stock auto editing · open-source / self-hosted video tool · AI script generation · MCP server · AdFoundry / 万镜工场 (a fork of ClipForge).</sub>
 
-<sub>ClipForge is an independent open-source project, not officially affiliated with TikTok, Douyin, Kuaishou, Xiaohongshu, YouTube, Shopify, Amazon, Microsoft, OpenAI or any model provider; follow each third-party model's and asset's terms when using them.</sub>
+<sub>AdFoundry (万镜工场) is a community fork of the open-source project ClipForge, unaffiliated with the original author, and not officially affiliated with TikTok, Douyin, Kuaishou, Xiaohongshu, YouTube, Shopify, Amazon, Microsoft, OpenAI or any model provider; follow each third-party model's and asset's terms when using them.</sub>
